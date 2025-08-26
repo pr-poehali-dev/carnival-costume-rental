@@ -93,7 +93,7 @@ const Index = () => {
                 Контакты
               </a>
               <Button variant="outline" className="border-theatrical-gold text-theatrical-gold hover:bg-theatrical-gold hover:text-theatrical-burgundy">
-                <Icon name="Phone" size={16} className="mr-2" />
+                <Icon name="Phone" size={16} className="mr-2 animate-pulse" />
                 Заказать звонок
               </Button>
             </div>
@@ -126,11 +126,11 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-theatrical-gold text-theatrical-burgundy hover:bg-yellow-400 font-open-sans px-8 py-4 text-lg">
-                <Icon name="Search" size={20} className="mr-2" />
+                <Icon name="Search" size={20} className="mr-2 animate-pulse" />
                 Выбрать костюм
               </Button>
               <Button variant="outline" size="lg" className="border-theatrical-cream text-theatrical-cream hover:bg-theatrical-cream hover:text-theatrical-burgundy font-open-sans px-8 py-4 text-lg">
-                <Icon name="Phone" size={20} className="mr-2" />
+                <Icon name="Phone" size={20} className="mr-2 animate-bounce-slow" />
                 Получить консультацию
               </Button>
             </div>
@@ -145,7 +145,7 @@ const Index = () => {
             <Card className="text-center border-theatrical-gold/20 hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="mx-auto mb-4 w-16 h-16 bg-theatrical-burgundy rounded-full flex items-center justify-center">
-                  <Icon name="Clock" size={32} className="text-theatrical-gold" />
+                  <Icon name="Clock" size={32} className="text-theatrical-gold animate-bounce-slow" />
                 </div>
                 <CardTitle className="font-cormorant text-2xl text-theatrical-burgundy">
                   Гибкие сроки аренды
@@ -161,7 +161,7 @@ const Index = () => {
             <Card className="text-center border-theatrical-gold/20 hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="mx-auto mb-4 w-16 h-16 bg-theatrical-burgundy rounded-full flex items-center justify-center">
-                  <Icon name="Truck" size={32} className="text-theatrical-gold" />
+                  <Icon name="Truck" size={32} className="text-theatrical-gold animate-pulse-scale" />
                 </div>
                 <CardTitle className="font-cormorant text-2xl text-theatrical-burgundy">
                   Доставка по Приморью
@@ -177,7 +177,7 @@ const Index = () => {
             <Card className="text-center border-theatrical-gold/20 hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="mx-auto mb-4 w-16 h-16 bg-theatrical-burgundy rounded-full flex items-center justify-center">
-                  <Icon name="Shield" size={32} className="text-theatrical-gold" />
+                  <Icon name="Shield" size={32} className="text-theatrical-gold animate-rotate-slow" />
                 </div>
                 <CardTitle className="font-cormorant text-2xl text-theatrical-burgundy">
                   Гарантия качества
@@ -218,7 +218,7 @@ const Index = () => {
                     : 'border-theatrical-burgundy text-theatrical-burgundy hover:bg-theatrical-burgundy hover:text-white'
                 }`}
               >
-                <Icon name={category.icon as any} size={16} className="mr-2" />
+                <Icon name={category.icon as any} size={16} className="mr-2 animate-pulse-scale" />
                 {category.name}
               </Button>
             ))}
@@ -234,11 +234,7 @@ const Index = () => {
                     alt={costume.name}
                     className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute top-4 right-4">
-                    <Badge variant="secondary" className="bg-theatrical-gold text-theatrical-burgundy">
-                      Хит
-                    </Badge>
-                  </div>
+
                 </div>
                 <CardHeader>
                   <CardTitle className="font-cormorant text-xl text-theatrical-burgundy">
@@ -254,7 +250,7 @@ const Index = () => {
                       {costume.price}
                     </span>
                     <Button size="sm" className="bg-theatrical-burgundy hover:bg-theatrical-velvet">
-                      <Icon name="ShoppingCart" size={16} className="mr-1" />
+                      <Icon name="ShoppingCart" size={16} className="mr-1 animate-bounce-slow" />
                       Арендовать
                     </Button>
                   </div>
@@ -280,15 +276,15 @@ const Index = () => {
               </p>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <Icon name="Award" size={24} className="text-theatrical-gold mr-3" />
+                  <Icon name="Award" size={24} className="text-theatrical-gold mr-3 animate-pulse-scale" />
                   <span className="font-open-sans">10+ лет опыта в сфере проката костюмов</span>
                 </div>
                 <div className="flex items-center">
-                  <Icon name="Users" size={24} className="text-theatrical-gold mr-3" />
+                  <Icon name="Users" size={24} className="text-theatrical-gold mr-3 animate-bounce-slow" />
                   <span className="font-open-sans">Более 5000 довольных клиентов</span>
                 </div>
                 <div className="flex items-center">
-                  <Icon name="Sparkles" size={24} className="text-theatrical-gold mr-3" />
+                  <Icon name="Sparkles" size={24} className="text-theatrical-gold mr-3 animate-pulse" />
                   <span className="font-open-sans">500+ уникальных костюмов в наличии</span>
                 </div>
               </div>
@@ -323,7 +319,7 @@ const Index = () => {
                 <CardContent className="pt-6">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-theatrical-gold rounded-full flex items-center justify-center flex-shrink-0">
-                      <Icon name="User" size={24} className="text-theatrical-burgundy" />
+                      <Icon name="User" size={24} className="text-theatrical-burgundy animate-pulse-scale" />
                     </div>
                     <div>
                       <p className="text-theatrical-cream font-open-sans mb-4 leading-relaxed">
@@ -363,7 +359,7 @@ const Index = () => {
             <div className="space-y-8">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-theatrical-burgundy rounded-full flex items-center justify-center">
-                  <Icon name="MapPin" size={24} className="text-theatrical-gold" />
+                  <Icon name="MapPin" size={24} className="text-theatrical-gold animate-bounce-slow" />
                 </div>
                 <div>
                   <h3 className="font-cormorant text-xl text-theatrical-burgundy font-semibold">Адрес</h3>
@@ -373,7 +369,7 @@ const Index = () => {
 
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-theatrical-burgundy rounded-full flex items-center justify-center">
-                  <Icon name="Phone" size={24} className="text-theatrical-gold" />
+                  <Icon name="Phone" size={24} className="text-theatrical-gold animate-pulse-scale" />
                 </div>
                 <div>
                   <h3 className="font-cormorant text-xl text-theatrical-burgundy font-semibold">Телефон</h3>
@@ -383,7 +379,7 @@ const Index = () => {
 
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-theatrical-burgundy rounded-full flex items-center justify-center">
-                  <Icon name="Mail" size={24} className="text-theatrical-gold" />
+                  <Icon name="Mail" size={24} className="text-theatrical-gold animate-bounce-slow" />
                 </div>
                 <div>
                   <h3 className="font-cormorant text-xl text-theatrical-burgundy font-semibold">Email</h3>
@@ -393,7 +389,7 @@ const Index = () => {
 
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-theatrical-burgundy rounded-full flex items-center justify-center">
-                  <Icon name="Clock" size={24} className="text-theatrical-gold" />
+                  <Icon name="Clock" size={24} className="text-theatrical-gold animate-rotate-slow" />
                 </div>
                 <div>
                   <h3 className="font-cormorant text-xl text-theatrical-burgundy font-semibold">Режим работы</h3>
@@ -433,7 +429,7 @@ const Index = () => {
                     />
                   </div>
                   <Button className="w-full bg-theatrical-burgundy hover:bg-theatrical-velvet font-open-sans">
-                    <Icon name="Send" size={16} className="mr-2" />
+                    <Icon name="Send" size={16} className="mr-2 animate-pulse" />
                     Отправить заявку
                   </Button>
                 </form>
@@ -456,10 +452,10 @@ const Index = () => {
               </p>
               <div className="flex space-x-4">
                 <Button size="icon" variant="outline" className="border-theatrical-gold text-theatrical-gold hover:bg-theatrical-gold hover:text-theatrical-burgundy">
-                  <Icon name="Facebook" size={20} />
+                  <Icon name="Facebook" size={20} className="animate-pulse-scale" />
                 </Button>
                 <Button size="icon" variant="outline" className="border-theatrical-gold text-theatrical-gold hover:bg-theatrical-gold hover:text-theatrical-burgundy">
-                  <Icon name="Instagram" size={20} />
+                  <Icon name="Instagram" size={20} className="animate-bounce-slow" />
                 </Button>
               </div>
             </div>
